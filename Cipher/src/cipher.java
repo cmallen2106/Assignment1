@@ -1,3 +1,6 @@
+//Assignment 1 - Cipher
+//Christina Sosa
+//Programming Fundamentals, Summer 2021
 
 public class cipher {
 
