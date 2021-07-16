@@ -20,8 +20,14 @@ public class cipher {
 		int num4; 
 		int num5; 
 		
+		//Program Header
+		System.out.println("Programming Fundamentals"); 
+		System.out.println("Name: Christina Sosa"); 
+		System.out.println("PROGRAMMING ASSIGNMENT 1");
+		System.out.println(); //adding extra line space
 		
 		//Ask user for 5 numbers
+		System.out.println("Welcome to the Cipher program"); 
 		System.out.println ("Please enter 5 numbers between 0 and 19"); 
 		
 		//************************************** 1st Number **************************************//
@@ -82,6 +88,7 @@ public class cipher {
 		//************************************** End of five numbers **************************************//
 		scan.close();
 		
+		System.out.println(); //adding extra line space
 		//Sum 5 numbers and store in a variable
 		int Total = (num1 + num2 + num3 + num4 + num5); 
 		System.out.println("Total = " + Total); 
