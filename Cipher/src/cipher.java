@@ -29,6 +29,8 @@ public class cipher {
 		//If 1st number is outside of limit
 		if(0 > num1 | num1 > 19) {
 			System.out.print("Please read directions and try again!"); 
+			scan.close();
+			System.exit(0); 
 		}
 		
 		
