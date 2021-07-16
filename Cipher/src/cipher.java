@@ -99,10 +99,10 @@ public class cipher {
 		System.out.println("Your random key is: " + rand_int); //Display key to user
 		
 		//Encode each digit of plaintext separately using Caesar Code
-		int digit1 = (Total /rand); //tens place
-		int digit2 = (Total % rand); //ones place
+		//int digit1 = (Total /rand); //tens place
+		//int digit2 = (Total % rand); //ones place
 		
-		System.out.println("Your encoded number is " + ); 
+		System.out.println("Your encoded number is "); 
 		
 	}
 
