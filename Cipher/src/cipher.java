@@ -20,6 +20,8 @@ public class cipher {
 		int num4; 
 		int num5; 
 		
+		
+		//Ask user for 5 numbers
 		System.out.println ("Please enter 5 numbers in the range of 0 to 19 down below:"); 
 		
 		//************************************** 1st Number **************************************//
@@ -82,6 +84,7 @@ public class cipher {
 		
 		//Sum 5 numbers and store in a variable
 		int sum = (num1 + num2 + num3 + num4 + num5); 
+		System.out.println("Sum of the numbers: " + sum); 
 		
 		//Random generator 0-9
 		Random rand = new Random(); 
