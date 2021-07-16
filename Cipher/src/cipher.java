@@ -83,6 +83,13 @@ public class cipher {
 		//Sum 5 numbers and store in a variable
 		int sum = (num1 + num2 + num3 + num4 + num5); 
 		
+		//Random generator 0-9
+		Random rand = new Random(); 
+		int rand_int = rand.nextInt(10); 
+		System.out.println("Your random key is: " + rand_int); //Display key to user
+		
+		//Encode each digit of plaintext separately using Caesar Code
+		
 	}
 
 }
