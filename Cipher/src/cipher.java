@@ -22,7 +22,7 @@ public class cipher {
 		
 		
 		//Ask user for 5 numbers
-		System.out.println ("Please enter 5 numbers in the range of 0 to 19 down below:"); 
+		System.out.println ("Please enter 5 numbers between 0 and 19"); 
 		
 		//************************************** 1st Number **************************************//
 		System.out.println("1st Number: ");
@@ -83,8 +83,8 @@ public class cipher {
 		scan.close();
 		
 		//Sum 5 numbers and store in a variable
-		int sum = (num1 + num2 + num3 + num4 + num5); 
-		System.out.println("Sum of the numbers: " + sum); 
+		int Total = (num1 + num2 + num3 + num4 + num5); 
+		System.out.println("Total = " + Total); 
 		
 		//Random generator 0-9
 		Random rand = new Random(); 
@@ -92,6 +92,10 @@ public class cipher {
 		System.out.println("Your random key is: " + rand_int); //Display key to user
 		
 		//Encode each digit of plaintext separately using Caesar Code
+		int digit1 = (Total /rand); //tens place
+		int digit2 = (Total % rand); //ones place
+		
+		System.out.println("Your encoded number is " + ); 
 		
 	}
 
