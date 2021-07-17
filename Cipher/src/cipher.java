@@ -9,16 +9,18 @@ public class cipher {
 
 	public static void main(String[] args) {
 		
-		Random generator = new Random(); 
 		Scanner scan = new Scanner(System.in); 
+				
+		int num1; //user inputed number
+		int num2; //user inputed number
+		int num3; //user inputed number
+		int num4; //user inputed number
+		int num5; //user inputed number
+		int encodedDigit1; 
+		int encodedDigit2; 
+		int finalTotal; 
 		
-		int key = generator.nextInt(10); 
 		
-		int num1; 
-		int num2; 
-		int num3; 
-		int num4; 
-		int num5; 
 		
 		//Program Header
 		System.out.println("Programming Fundamentals"); 
@@ -99,10 +101,19 @@ public class cipher {
 		System.out.println("Your random key is: " + rand_int); //Display key to user
 		
 		//Encode each digit of plaintext separately using Caesar Code
-		//int digit1 = (Total /rand); //tens place
-		//int digit2 = (Total % rand); //ones place
 		
-		System.out.println("Your encoded number is "); 
+		
+		encodedDigit1 = ((Total / 10) + rand_int) % 10; 
+		finalTotal = (Total / 10) * 10; 
+		encodedDigit2 = ((Total - finalTotal) + rand_int) % 10; 
+		 
+				
+		encodedDigit1 = (encodedDigit1 + rand_int) % 10; 
+		encodedDigit2 = (encodedDigit2 + rand_int) % 10; 
+		
+		
+		
+		System.out.println("Your encoded number is " + finalTotal); 
 		
 	}
 
