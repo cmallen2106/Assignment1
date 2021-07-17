@@ -16,10 +16,9 @@ public class cipher {
 		int num3; //user inputed number
 		int num4; //user inputed number
 		int num5; //user inputed number
-		int encodedDigit1; 
-		int encodedDigit2; 
-		int finalTotal; 
-		
+		int encodedDigit1; //Corresponding to tens digit
+		int encodedDigit2; //Corresponding to ones digit
+		int finalTotal; //Corresponding to ones digit
 		
 		
 		//Program Header
@@ -101,15 +100,11 @@ public class cipher {
 		System.out.println("Your random key is: " + rand_int); //Display key to user
 		
 		//Encode each digit of plaintext separately using Caesar Code
+		encodedDigit1 = ((Total / 10) + rand_int) % 10; //Corresponding to tens digit
+		finalTotal = (Total / 10) * 10; //Corresponding to ones digit
+		encodedDigit2 = ((Total - finalTotal) + rand_int) % 10; //Corresponding to ones digit
 		
-		
-		encodedDigit1 = ((Total / 10) + rand_int) % 10; 
-		finalTotal = (Total / 10) * 10; 
-		encodedDigit2 = ((Total - finalTotal) + rand_int) % 10; 
-		
-		
-		
-		
+		//Output final encoded number 
 		System.out.println("Your encoded number is " + encodedDigit1 + encodedDigit2); 
 		
 	}
