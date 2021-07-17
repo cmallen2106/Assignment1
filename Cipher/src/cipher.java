@@ -106,14 +106,11 @@ public class cipher {
 		encodedDigit1 = ((Total / 10) + rand_int) % 10; 
 		finalTotal = (Total / 10) * 10; 
 		encodedDigit2 = ((Total - finalTotal) + rand_int) % 10; 
-		 
-				
-		encodedDigit1 = (encodedDigit1 + rand_int) % 10; 
-		encodedDigit2 = (encodedDigit2 + rand_int) % 10; 
 		
 		
 		
-		System.out.println("Your encoded number is " + finalTotal); 
+		
+		System.out.println("Your encoded number is " + encodedDigit1 + encodedDigit2); 
 		
 	}
 
